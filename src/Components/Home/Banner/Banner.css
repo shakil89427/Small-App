@@ -1,0 +1,22 @@
+.banner {
+  background: radial-gradient(
+    circle,
+    rgba(71, 67, 125, 1) 0%,
+    rgba(0, 160, 255, 1) 50%,
+    rgba(7, 76, 158, 1) 78%
+  );
+}
+.bottom-banner {
+  margin-top: -10%;
+  background-color: white;
+  border-radius: 10px;
+  width: 85%;
+}
+.banner-btn {
+  width: 200px;
+  border: none;
+  background-color: rgba(7, 61, 240, 0.61);
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}

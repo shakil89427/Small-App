@@ -1,0 +1,18 @@
+.variation {
+  background-color: rgba(68, 111, 230, 0.993);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.variation-btns button {
+  width: 150px;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin: 10px 20px;
+  padding: 10px;
+  background-color: rgba(68, 111, 230, 0.993);
+  color: white;
+}
+.variation-btns i {
+  margin-right: 10px;
+}

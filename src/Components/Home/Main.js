@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "./Banner/Banner";
 import Demo from "./Demo/Demo";
 import Interface from "./Interface/Interface";
+import Variation from "./Variation/Variation";
 
 const Main = () => {
   return (
@@ -9,6 +10,7 @@ const Main = () => {
       <Banner></Banner>
       <Demo></Demo>
       <Interface></Interface>
+      <Variation></Variation>
     </div>
   );
 };

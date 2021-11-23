@@ -19,7 +19,7 @@ const Interface = () => {
           <Col sm={12} md={6} lg={6}>
             <Row className="interface-right p-5">
               <Col className="p-3" sm={12} md={6} lg={6}>
-                <i class="far fa-bookmark"></i>
+                <i className="far fa-bookmark"></i>
                 <h5>Easy Prototyping</h5>
                 <p>
                   Curabitur arcu erat, accumsan id imperdiet et, porttitor at
@@ -27,7 +27,7 @@ const Interface = () => {
                 </p>
               </Col>
               <Col className="p-3" sm={12} md={6} lg={6}>
-                <i class="fas fa-wave-square"></i>
+                <i className="fas fa-wave-square"></i>
                 <h5>Sensor Bridge</h5>
                 <p>
                   Curabitur arcu erat, accumsan id imperdiet et, porttitor at
@@ -35,7 +35,7 @@ const Interface = () => {
                 </p>
               </Col>
               <Col className="p-3" sm={12} md={6} lg={6}>
-                <i class="fas fa-signal"></i>
+                <i className="fas fa-signal"></i>
                 <h5>Strategist</h5>
                 <p>
                   Curabitur arcu erat, accumsan id imperdiet et, porttitor at
@@ -43,7 +43,7 @@ const Interface = () => {
                 </p>
               </Col>
               <Col className="p-3" sm={12} md={6} lg={6}>
-                <i class="fas fa-sliders-h"></i>
+                <i className="fas fa-sliders-h"></i>
                 <h5>Art Direction</h5>
                 <p>
                   Curabitur arcu erat, accumsan id imperdiet et, porttitor at

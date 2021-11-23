@@ -10,13 +10,13 @@ const Variation = () => {
       <p>We say you won’t look back.</p>
       <Container className="variation-btns text-center d-flex justify-content-center flex-wrap">
         <button>
-          <i class="fab fa-apple"></i>IPHONE
+          <i className="fab fa-apple"></i>IPHONE
         </button>
         <button>
-          <i class="fab fa-android"></i>ANDROID
+          <i className="fab fa-android"></i>ANDROID
         </button>
         <button>
-          <i class="fab fa-windows"></i>WINDOWS
+          <i className="fab fa-windows"></i>WINDOWS
         </button>
       </Container>
     </div>

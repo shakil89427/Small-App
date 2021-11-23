@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./Header.css";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo-alt.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -18,35 +18,20 @@ const Header = () => {
         <Navbar.Collapse className="text-center" id="responsive-navbar-nav">
           <Nav className="ms-auto ">
             <div className="d-flex justify-content-center align-items-center">
-              <Link
-                to="home"
-                className="text-decoration-none text-dark fw-bolder me-2"
-              >
+              <Link to="home" className="text-decoration-none text-white me-2">
                 Home
               </Link>
-              <Link
-                to="home"
-                className="text-decoration-none text-dark fw-bolder me-2"
-              >
+              <Link to="home" className="text-decoration-none text-white me-2">
                 Team
               </Link>
-              <Link
-                to="home"
-                className="text-decoration-none text-dark fw-bolder me-2"
-              >
+              <Link to="home" className="text-decoration-none text-white me-2">
                 Career
               </Link>
-              <Link
-                to="home"
-                className="text-decoration-none text-dark fw-bolder me-2"
-              >
+              <Link to="home" className="text-decoration-none text-white me-2">
                 Blog
               </Link>
 
-              <Link
-                to="home"
-                className="text-decoration-none text-dark fw-bolder me-2"
-              >
+              <Link to="home" className="text-decoration-none text-white me-2">
                 Login
               </Link>
             </div>

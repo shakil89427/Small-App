@@ -1,5 +1,10 @@
 .variation {
-  background-color: rgba(68, 111, 230, 0.993);
+  background: radial-gradient(
+    circle,
+    rgba(71, 67, 125, 1) 0%,
+    rgba(0, 160, 255, 1) 50%,
+    rgba(7, 76, 158, 1) 78%
+  );
   color: white;
   text-align: center;
   padding: 10px;
@@ -10,7 +15,7 @@
   border-radius: 30px;
   margin: 10px 20px;
   padding: 10px;
-  background-color: rgba(68, 111, 230, 0.993);
+  background-color: rgba(68, 111, 230, 0.404);
   color: white;
 }
 .variation-btns i {

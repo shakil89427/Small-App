@@ -1,0 +1,8 @@
+.interface {
+  text-align: center;
+  background-color: rgba(247, 245, 245, 0.658);
+  padding: 50px 10px;
+}
+.interface-right {
+  background-color: white;
+}

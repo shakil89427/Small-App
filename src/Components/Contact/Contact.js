@@ -15,14 +15,14 @@ const Contact = () => {
         <Row className="text-center">
           <Col className="mb-5" sm={12} md={6} lg={6}>
             <h1>
-              <i class="fas fa-mobile-alt"></i>
+              <i className="fas fa-mobile-alt"></i>
             </h1>
             <h3 className="fw-light">(00) 789 456 7890 (USA)</h3>
             <h3 className="fw-light">(88) 016 725 0455 (UK)</h3>
           </Col>
           <Col className="mb-5" sm={12} md={6} lg={6}>
             <h1>
-              <i class="fas fa-map-marked-alt"></i>
+              <i className="fas fa-map-marked-alt"></i>
             </h1>
             <h3 className="fw-light">36. St Michael’s St, Oxford OX1, UK</h3>
             <h3 className="fw-light">123, Pennsylvania, USA</h3>

@@ -51,7 +51,7 @@ const Career = () => {
       <Container>
         <Row className="enjoy text-center mt-5">
           <Col sm={12} md={6} lg={3}>
-            <i class="far fa-clock"></i>
+            <i className="far fa-clock"></i>
             <h5 className="fw-light">Flexible hours</h5>
             <p>
               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec
@@ -59,7 +59,7 @@ const Career = () => {
             </p>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <i class="fas fa-filter"></i>
+            <i className="fas fa-filter"></i>
             <h5 className="fw-light">Free Snacks & Drinks</h5>
             <p>
               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec
@@ -67,7 +67,7 @@ const Career = () => {
             </p>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <i class="fas fa-headset"></i>
+            <i className="fas fa-headset"></i>
             <h5 className="fw-light">Gaming</h5>
             <p>
               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec
@@ -75,7 +75,7 @@ const Career = () => {
             </p>
           </Col>
           <Col sm={12} md={6} lg={3}>
-            <i class="fas fa-hammer"></i>
+            <i className="fas fa-hammer"></i>
             <h5 className="fw-light">4 Working Days</h5>
             <p>
               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec

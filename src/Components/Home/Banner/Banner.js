@@ -10,8 +10,8 @@ const Banner = () => {
         <Container>
           <Row className="text-center">
             <Col className="py-3 my-auto text-white" sm={12} md={6} lg={6}>
-              <h1>Showcase your app</h1>
-              <h1>with Small Apps</h1>
+              <h1 className="fw-bolder">Showcase your app</h1>
+              <h1 className="fw-bolder">with Small Apps</h1>
               <p>
                 Besides its beautiful design. Laapp is an incredibly rich core
                 framework for you to showcase your App.
@@ -35,7 +35,7 @@ const Banner = () => {
         <Row>
           <Col sm={12} md={6} lg={4}>
             <i className="fs-2 mb-4 text-info fas fa-coffee"></i>
-            <h5>Themes Made Easy</h5>
+            <h5 className="fw-light">Themes Made Easy</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
               non, recusandae tempore ipsam dignissimos molestias.
@@ -43,7 +43,7 @@ const Banner = () => {
           </Col>
           <Col sm={12} md={6} lg={4}>
             <i className="fs-2 mb-4 text-info fas fa-sun"></i>
-            <h5>Powerful Design</h5>
+            <h5 className="fw-light">Powerful Design</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
               non, recusandae tempore ipsam dignissimos molestias.
@@ -51,7 +51,7 @@ const Banner = () => {
           </Col>
           <Col sm={12} md={12} lg={4}>
             <i className="fs-2 mb-4 text-info fas fa-cloud"></i>
-            <h5>Creative Content</h5>
+            <h5 className="fw-light">Creative Content</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
               non, recusandae tempore ipsam dignissimos molestias.

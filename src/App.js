@@ -6,7 +6,8 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Team from "./Components/Team/Team";
 import Career from "./Components/Career/Career";
-import Login from "./Components/Login/Login";
+import Login from "./Components/LoginOrRegister/Login";
+import Signup from "./Components/LoginOrRegister/Signup";
 import Error from "./Components/Error/Error";
 import Contact from "./Components/Contact/Contact";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/career" element={<Career />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

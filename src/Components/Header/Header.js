@@ -9,31 +9,28 @@ const Header = () => {
     <Navbar collapseOnSelect expand="lg" className="navbar">
       <Container>
         <Navbar.Brand>
-          <NavLink to="home">
+          <NavLink to="/home">
             <img className="me-3" src={logo} alt="" />
           </NavLink>
-          <p className="fs-6 d-inline">
-            <small>Welcome, Shakil Ahmed</small>
-          </p>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="text-center" id="responsive-navbar-nav">
           <Nav className="ms-auto d-flex justify-content-center align-items-center">
-            <Link to="home" className="text-decoration-none text-white me-2">
+            <Link to="/home" className="header-link">
               Home
             </Link>
-            <Link to="team" className="text-decoration-none text-white me-2">
+            <Link to="/team" className="header-link">
               Team
             </Link>
-            <Link to="career" className="text-decoration-none text-white me-2">
+            <Link to="/career" className="header-link">
               Career
             </Link>
-            <Link to="contact" className="text-decoration-none text-white me-2">
+            <Link to="/contact" className="header-link">
               Contact
             </Link>
 
-            <Link to="login" className="text-decoration-none text-white me-2">
-              Login
+            <Link to="/login">
+              <button className="header-btn">Login</button>
             </Link>
           </Nav>
         </Navbar.Collapse>

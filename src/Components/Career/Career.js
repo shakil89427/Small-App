@@ -10,7 +10,7 @@ const Career = () => {
   return (
     <div>
       <div className="mt-5 text-center">
-        <h1>Career</h1>
+        <h1 className="fw-light">Career</h1>
         <p className="w-50 mx-auto">
           Vivamus magna justo, lacinia eget consectetur sed, convallis at
           tellus. Vivamus magna justo, lacinia eget consectetur sed, convallis
@@ -20,7 +20,7 @@ const Career = () => {
       <Container>
         <Row className="my-5">
           <Col className="text-center my-auto py-5" sm={12} md={6} lg={6}>
-            <h1>Who we're looking for</h1>
+            <h1 className="fw-light">Who we're looking for</h1>
             <p>
               Praesent sapien massa, convallis a pellentesque nec, egestas non
               nisi. eget tortor risus. Vivamus magna justo, lacinia eget
@@ -47,12 +47,12 @@ const Career = () => {
           </Col>
         </Row>
       </Container>
-      <h1 className="text-center">Some amenities for you to enjoy</h1>
+      <h1 className="fw-light text-center">Some amenities for you to enjoy</h1>
       <Container>
         <Row className="enjoy text-center mt-5">
           <Col sm={12} md={6} lg={3}>
             <i class="far fa-clock"></i>
-            <h5>Flexible hours</h5>
+            <h5 className="fw-light">Flexible hours</h5>
             <p>
               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec
               rutrum congue leo eget malesuada.
@@ -60,7 +60,7 @@ const Career = () => {
           </Col>
           <Col sm={12} md={6} lg={3}>
             <i class="fas fa-filter"></i>
-            <h5>Free Snacks & Drinks</h5>
+            <h5 className="fw-light">Free Snacks & Drinks</h5>
             <p>
               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec
               rutrum congue leo eget malesuada.
@@ -68,7 +68,7 @@ const Career = () => {
           </Col>
           <Col sm={12} md={6} lg={3}>
             <i class="fas fa-headset"></i>
-            <h5>Gaming</h5>
+            <h5 className="fw-light">Gaming</h5>
             <p>
               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec
               rutrum congue leo eget malesuada.
@@ -76,7 +76,7 @@ const Career = () => {
           </Col>
           <Col sm={12} md={6} lg={3}>
             <i class="fas fa-hammer"></i>
-            <h5>4 Working Days</h5>
+            <h5 className="fw-light">4 Working Days</h5>
             <p>
               Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec
               rutrum congue leo eget malesuada.
@@ -85,32 +85,32 @@ const Career = () => {
         </Row>
       </Container>
       <Container>
-        <h1 className=" text-center my-5">Job Opening</h1>
+        <h1 className="fw-light text-center my-5">Job Opening</h1>
         <div className="job border-bottom mb-5 w-75 mx-auto pb-3 d-flex justify-content-between">
           <span>
-            <h4>Andriod Developer</h4>
-            <h6>Hamburg, Germany</h6>
+            <h4 className="fw-light">Andriod Developer</h4>
+            <h6 className="fw-light">Hamburg, Germany</h6>
           </span>
           <button>VIEW DETAILS</button>
         </div>
         <div className="job border-bottom mb-5 w-75 mx-auto pb-3 d-flex justify-content-between">
           <span>
-            <h4>DevOps Engineer</h4>
-            <h6>London, United Kingdom</h6>
+            <h4 className="fw-light">DevOps Engineer</h4>
+            <h6 className="fw-light">London, United Kingdom</h6>
           </span>
           <button>VIEW DETAILS</button>
         </div>
         <div className="job border-bottom mb-5 w-75 mx-auto pb-3 d-flex justify-content-between">
           <span>
-            <h4>Operations Associate</h4>
-            <h6>New Jersey , USA</h6>
+            <h4 className="fw-light">Operations Associate</h4>
+            <h6 className="fw-light">New Jersey , USA</h6>
           </span>
           <button>VIEW DETAILS</button>
         </div>
         <div className="job border-bottom mb-5 w-75 mx-auto pb-3 d-flex justify-content-between">
           <span>
-            <h4>Compliance Officer</h4>
-            <h6>New Jersey , USA</h6>
+            <h4 className="fw-light">Compliance Officer</h4>
+            <h6 className="fw-light">New Jersey , USA</h6>
           </span>
           <button>VIEW DETAILS</button>
         </div>

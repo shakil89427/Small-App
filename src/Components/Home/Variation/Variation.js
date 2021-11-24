@@ -4,8 +4,8 @@ import "./Variation.css";
 
 const Variation = () => {
   return (
-    <div className="variation">
-      <h1>It's time to change your mind</h1>
+    <div className="py-5 variation">
+      <h1 className="fw-light">It's time to change your mind</h1>
       <p>Download over 2 million humans .Get Small Apps free forever!</p>
       <p>We say you won’t look back.</p>
       <Container className="variation-btns text-center d-flex justify-content-center flex-wrap">

@@ -13,7 +13,9 @@ const Demo = () => {
             <img className="img-fluid" src={demo1} alt="" />
           </Col>
           <Col className="p-5 my-auto" sm={12} md={12} lg={6}>
-            <h1>Increase your productivity with Small Apps</h1>
+            <h1 className="fw-light">
+              Increase your productivity with Small Apps
+            </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -27,7 +29,9 @@ const Demo = () => {
         </Row>
         <Row>
           <Col className="p-5 my-auto" sm={12} md={12} lg={6}>
-            <h1>Increase your productivity with Small Apps</h1>
+            <h1 className="fw-light">
+              Increase your productivity with Small Apps
+            </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

@@ -14,7 +14,7 @@ const Team = () => {
   return (
     <div>
       <div className="py-5 text-center">
-        <h1>Our Team</h1>
+        <h1 className="fw-light">Our Team</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, beatae
           atque dolorum impedit
@@ -25,7 +25,7 @@ const Team = () => {
           <Col className="team-feature my-2" sm={12} md={6} lg={6}>
             <div className="">
               <img src={feature1} alt="" />
-              <h2>Elon Musk</h2>
+              <h2 className="fw-light">Elon Musk</h2>
               <h6>Founder & CEO</h6>
               <p>
                 Vivamus magna justo, lacinia eget consectetur sed, convallis at
@@ -47,7 +47,7 @@ const Team = () => {
           <Col className="team-feature my-2" sm={12} md={6} lg={6}>
             <div className="">
               <img src={feature2} alt="" />
-              <h2>Sergey Brin</h2>
+              <h2 className="fw-light">Sergey Brin</h2>
               <h6>Founder & CEO</h6>
               <p>
                 Vivamus magna justo, lacinia eget consectetur sed, convallis at
@@ -69,7 +69,7 @@ const Team = () => {
         </Row>
       </Container>
       <div className="py-5 text-center">
-        <h1>Design Team</h1>
+        <h1 className="fw-light">Design Team</h1>
         <p>
           Small Apps makes it easy to stay on top of your Life Style. No late
           tasks. No gimmicks.
@@ -119,7 +119,7 @@ const Team = () => {
         </Row>
       </Container>
       <div className="py-5 text-center">
-        <h1>Marketing Team</h1>
+        <h1 className="fw-light">Marketing Team</h1>
         <p>
           Small Apps makes it easy to stay on top of your Life Style. No late
           tasks. No gimmicks.
@@ -169,7 +169,7 @@ const Team = () => {
         </Row>
       </Container>
       <div className="team-bottom text-center">
-        <h1>We are hunting Genius Developers</h1>
+        <h1 className="fw-light">We are hunting Genius Developers</h1>
         <p className="w-75 mx-auto">
           Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula
           elementum sed sit amet dui. Pellentesque in ipsum id orci porta

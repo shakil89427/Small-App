@@ -21,17 +21,20 @@ const Header = () => {
               <Link to="home" className="text-decoration-none text-white me-2">
                 Home
               </Link>
-              <Link to="home" className="text-decoration-none text-white me-2">
+              <Link to="team" className="text-decoration-none text-white me-2">
                 Team
               </Link>
-              <Link to="home" className="text-decoration-none text-white me-2">
+              <Link
+                to="career"
+                className="text-decoration-none text-white me-2"
+              >
                 Career
               </Link>
-              <Link to="home" className="text-decoration-none text-white me-2">
+              <Link to="blog" className="text-decoration-none text-white me-2">
                 Blog
               </Link>
 
-              <Link to="home" className="text-decoration-none text-white me-2">
+              <Link to="login" className="text-decoration-none text-white me-2">
                 Login
               </Link>
             </div>

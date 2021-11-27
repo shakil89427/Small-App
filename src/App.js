@@ -10,10 +10,11 @@ import Login from "./Components/LoginOrRegister/Login";
 import Signup from "./Components/LoginOrRegister/Signup";
 import Error from "./Components/Error/Error";
 import Contact from "./Components/Contact/Contact";
+import AuthProvider from "./Components/AuthProvider/AuthProvider";
 
 function App() {
   return (
-    <>
+    <AuthProvider>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -28,7 +29,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </>
+    </AuthProvider>
   );
 }
 

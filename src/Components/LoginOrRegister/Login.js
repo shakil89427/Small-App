@@ -1,11 +1,37 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Alert, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import login from "../../images/Login/login.jpg";
 import logo from "../../images/logo.png";
+import useAuth from "../AuthProvider/useAuth";
 import "./Common.css";
 
 const Login = () => {
+  const { user, signInUsingGoogle, emailsign } = useAuth();
+  const [userData, setUserData] = useState();
+  const [status, setStatus] = useState(false);
+
+  useEffect(() => {
+    if (user.displayName) {
+      setStatus(true);
+    } else {
+      setStatus(false);
+    }
+  }, [user]);
+
+  const getData = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    const oldData = { ...userData };
+    oldData[name] = value;
+    setUserData(oldData);
+  };
+
+  const loginWithData = (e) => {
+    e.preventDefault();
+    emailsign(userData);
+    e.target.reset();
+  };
   return (
     <Container className="py-5 my-5">
       <Row>
@@ -19,8 +45,11 @@ const Login = () => {
           <h3 className="fw-light mt-5 pb-3 border-bottom w-75 mx-auto">
             Sign in to To Your Account
           </h3>
-          <form onSubmit={(e) => e.preventDefault()}>
+          <form onSubmit={loginWithData}>
             <input
+              disabled={status}
+              onChange={getData}
+              name="email"
               className="login-input"
               placeholder="Enter Your Email"
               required
@@ -28,24 +57,39 @@ const Login = () => {
             />
             <br />
             <input
+              disabled={status}
+              onChange={getData}
+              name="password"
               className="login-input"
               placeholder="Enter Your Password"
               required
               type="password"
             />
-            <button type="submit" className="login-btn">
-              SIGN IN
-            </button>
+            {user.email ? (
+              <Alert variant="success">
+                Login Success
+                <Link className="success-btn" to="/home">
+                  Back To Home
+                </Link>
+              </Alert>
+            ) : (
+              <>
+                <button type="submit" className="login-btn">
+                  SIGN IN
+                </button>
+                <p>-----------OR-----------</p>
+                <button onClick={signInUsingGoogle} className="login-btn mt-0">
+                  GOOGLE SIGN IN
+                </button>
+                <p className="fw-light m-0">
+                  Don't Have an account?{" "}
+                  <Link className="text-decoration-none" to="/signup">
+                    Sign Up
+                  </Link>
+                </p>
+              </>
+            )}
           </form>
-          <p>-----------OR-----------</p>
-          <button className="login-btn mt-0">GOOGLE SIGN IN</button>
-          <p className="fw-light m-0">Forget your password?</p>
-          <p className="fw-light m-0">
-            Don't Have an account?{" "}
-            <Link className="text-decoration-none" to="/signup">
-              Sign Up
-            </Link>
-          </p>
         </Col>
       </Row>
     </Container>

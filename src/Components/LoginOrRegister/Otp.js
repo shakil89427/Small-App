@@ -31,10 +31,15 @@ const Otp = () => {
 
   const onSignInSubmit = (e) => {
     e.preventDefault();
-    captcha();
-    const phoneNumber = "+88" + number;
-    const appVerifier = window.recaptchaVerifier;
-    signWithPhone(phoneNumber, name, appVerifier);
+    if (number.length === 11) {
+      captcha();
+      const phoneNumber = "+88" + number;
+      const appVerifier = window.recaptchaVerifier;
+      signWithPhone(phoneNumber, name, appVerifier);
+      e.target.reset();
+    } else {
+      alert("Type correct number");
+    }
   };
 
   return (

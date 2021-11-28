@@ -11,6 +11,7 @@ import Signup from "./Components/LoginOrRegister/Signup";
 import Error from "./Components/Error/Error";
 import Contact from "./Components/Contact/Contact";
 import AuthProvider from "./Components/AuthProvider/AuthProvider";
+import Otp from "./Components/LoginOrRegister/Otp";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/home" element={<Main />} />
+          <Route path="/otp" element={<Otp />} />
           <Route path="/team" element={<Team />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact" element={<Contact />} />

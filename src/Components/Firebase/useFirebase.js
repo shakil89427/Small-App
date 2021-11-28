@@ -1,9 +1,11 @@
 import {
   getAuth,
+  RecaptchaVerifier,
   signInWithPopup,
   GoogleAuthProvider,
   onAuthStateChanged,
   updateProfile,
+  signInWithPhoneNumber,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
@@ -18,6 +20,28 @@ const useFirebase = () => {
   const [tempName, setTempName] = useState("");
 
   const auth = getAuth();
+
+  const signWithPhone = (phoneNumber, name, appVerifier) => {
+    setTempName(name);
+    signInWithPhoneNumber(auth, phoneNumber, appVerifier)
+      .then((confirmationResult) => {
+        window.confirmationResult = confirmationResult;
+        const code = window.prompt("Enter the OTP sended to your number");
+        confirmationResult
+          .confirm(code)
+          .then((result) => {
+            updateProfile(auth.currentUser, {
+              displayName: name,
+            }).then(() => setuser(auth.currentUser));
+          })
+          .catch((error) => {
+            alert(error);
+          });
+      })
+      .catch((error) => {
+        alert(error);
+      });
+  };
 
   const register = (userdata) => {
     setloading(true);
@@ -83,6 +107,9 @@ const useFirebase = () => {
   return {
     user,
     loading,
+    RecaptchaVerifier,
+    auth,
+    signWithPhone,
     signInUsingGoogle,
     emailsign,
     register,

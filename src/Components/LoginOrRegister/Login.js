@@ -65,7 +65,7 @@ const Login = () => {
               required
               type="password"
             />
-            {user.email ? (
+            {user.displayName ? (
               <Link to="/home">
                 <button className="success-btn">
                   Login Success Back To Home

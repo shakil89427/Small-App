@@ -78,7 +78,7 @@ const Login = () => {
               required
               type="password"
             />
-            {user.email ? (
+            {user.displayName ? (
               <Link to="/home">
                 <button className="success-btn">
                   Signup Success Back To Home
@@ -89,6 +89,10 @@ const Login = () => {
                 <button type="submit" className="login-btn">
                   SIGN UP
                 </button>
+                <p>-----------OR-----------</p>
+                <Link to="/otp">
+                  <button className="login-btn mt-0">WITH NUMBER</button>
+                </Link>
                 <p className="fw-light m-0">
                   By clicking “Sign Up” I agree to Terms of Conditions.
                 </p>

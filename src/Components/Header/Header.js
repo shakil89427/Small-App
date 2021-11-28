@@ -36,7 +36,7 @@ const Header = () => {
               Contact
             </Link>
 
-            {user.email ? (
+            {user.displayName ? (
               <button onClick={logout} className="header-btn">
                 Logout
               </button>

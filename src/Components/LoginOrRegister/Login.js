@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Alert, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import login from "../../images/Login/login.jpg";
 import logo from "../../images/logo.png";
@@ -66,12 +66,11 @@ const Login = () => {
               type="password"
             />
             {user.email ? (
-              <Alert variant="success">
-                Login Success
-                <Link className="success-btn" to="/home">
-                  Back To Home
-                </Link>
-              </Alert>
+              <Link to="/home">
+                <button className="success-btn">
+                  Login Success Back To Home
+                </button>
+              </Link>
             ) : (
               <>
                 <button type="submit" className="login-btn">

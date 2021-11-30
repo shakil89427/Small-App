@@ -27,8 +27,8 @@ const Demo = () => {
             </p>
           </Col>
         </Row>
-        <Row>
-          <Col className="p-5 my-auto" sm={12} md={12} lg={6}>
+        <Row className="d-flex flex-column-reverse flex-md-row flex-lg-row">
+          <Col className="p-5 my-auto" md={12} lg={6}>
             <h1 className="fw-light">
               Increase your productivity with Small Apps
             </h1>
@@ -42,7 +42,7 @@ const Demo = () => {
               <img src={man} alt="" /> Jonathon Andrew{" "}
             </p>
           </Col>
-          <Col sm={12} md={12} lg={6}>
+          <Col md={12} lg={6}>
             <img className="img-fluid" src={demo2} alt="" />
           </Col>
         </Row>
